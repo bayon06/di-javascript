@@ -35,10 +35,27 @@ console.log(x);
 const lista = [1, 2];
 lista.push(3);
 console.log(lista);
-lista = [];
+//lista = [];
 // Por la consola saldría [1, 2, 3], falla porque al estar declarada la variable lista con const no se le puede reasignar otro valor
 
 let nombre2 = "Ana";
 let edad2 = 30;
 let tienePareja = true;
 let sueldo = 1250.5;
+
+
+/**
+ * RETO
+ */
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+//3
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+/**
+ * 0
+ * 1
+ * 2
+ */
